@@ -1,0 +1,140 @@
+"use client"
+
+import { useRef } from "react"
+import { motion, useScroll, useTransform } from "framer-motion"
+import {
+  Search,
+  Lightbulb,
+  PenTool,
+  Code2,
+  TestTube,
+  Rocket,
+} from "lucide-react"
+
+const steps = [
+  {
+    icon: Search,
+    title: "Descubrimiento",
+    description:
+      "Entendemos tus objetivos, tu audiencia y el alcance del proyecto para definir una solución simple o compleja según necesites.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Estrategia",
+    description:
+      "Diseñamos una hoja de ruta clara con hitos y entregables, desde proyectos ágiles hasta iniciativas robustas.",
+  },
+  {
+    icon: PenTool,
+    title: "Diseño",
+    description:
+      "Experiencias de usuario intuitivas y diseños alineados con tu marca, ya sea una interfaz simple o un sistema completo.",
+  },
+  {
+    icon: Code2,
+    title: "Desarrollo",
+    description:
+      "Construimos tu solución con código limpio y escalable, desde funcionalidades básicas hasta sistemas robustos.",
+  },
+  {
+    icon: TestTube,
+    title: "Pruebas",
+    description:
+      "Aseguramos la calidad en todas las plataformas, con pruebas adaptadas a la complejidad de tu proyecto.",
+  },
+  {
+    icon: Rocket,
+    title: "Lanzamiento",
+    description:
+      "Despliegue y soporte continuo para que tu producto funcione bien, ya sea una solución simple o una plataforma compleja.",
+  },
+]
+
+export function Process() {
+  
+  const containerRef = useRef<HTMLDivElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  })
+
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"])
+
+  return (
+    <section id="process" className="py-32 bg-stone-950 relative" ref={containerRef}>
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
+            Cómo trabajamos
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-stone-50 mt-4">
+            Nuestro proceso
+          </h2>
+          <p className="text-stone-400 mt-4 max-w-2xl mx-auto">
+            Una metodología probada para entregar soluciones simples o complejas con resultados claros.
+          </p>
+        </motion.div>
+
+        <div className="relative">
+          {/* Animated vertical line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-stone-800">
+            <motion.div
+              className="absolute top-0 left-0 w-full bg-gradient-to-b from-emerald-500 via-teal-500 to-emerald-500"
+              style={{ height: lineHeight }}
+            />
+          </div>
+
+          {/* Steps */}
+          <div className="space-y-24">
+            {steps.map((step, index) => (
+              <motion.div
+                key={step.title}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+                className={`flex items-center gap-8 ${
+                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                }`}
+              >
+                <div
+                  className={`flex-1 ${
+                    index % 2 === 0 ? "text-right" : "text-left"
+                  }`}
+                >
+                  <div
+                    className={`inline-block p-6 rounded-2xl bg-stone-900/50 border border-stone-800 backdrop-blur-sm max-w-md ${
+                      index % 2 === 0 ? "ml-auto" : "mr-auto"
+                    }`}
+                  >
+                    <h3 className="text-xl font-semibold text-stone-50 mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-stone-400 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Center icon */}
+                <div className="relative z-10 flex-shrink-0">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center shadow-lg shadow-emerald-500/25">
+                    <step.icon className="w-7 h-7 text-stone-50" />
+                  </div>
+                </div>
+
+                <div className="flex-1" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
