@@ -181,7 +181,7 @@ export function Hero() {
               transition={{ duration: 0.8 }}
               className="flex w-fit h-12 items-center rounded-full border border-emerald-500/40 bg-emerald-500/10 px-6 py-2 text-xl font-medium text-emerald-400"
             >
-              Agencia de Desarrollo
+              Portafolio de Servicios
             </motion.span>
 
             <motion.div
@@ -218,9 +218,8 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="max-w-2xl lg:text-4xl leading-8 text-stone-400"
             >
-              Ofrecemos soluciones tecnológicas que van desde lo simple y eficaz
-              hasta lo complejo y robusto, con acompañamiento y soporte continuo
-              para tu negocio.
+              Soluciones tecnológicas que van desde lo simple y eficaz
+              hasta lo complejo y robusto, con acompañamiento y soporte continuo.
             </motion.p>
 
             <motion.div
@@ -234,7 +233,7 @@ export function Hero() {
                 <ArrowRight className="ml-3 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </button>
               <button className="inline-flex items-center justify-center rounded-full border border-stone-600 bg-white/5 px-8 py-4 text-base font-medium text-stone-100 transition hover:bg-stone-800/70">
-                Mira nuestro trabajo
+                Mira mis proyectos
               </button>
             </motion.div>
           </div>
@@ -248,7 +247,7 @@ export function Hero() {
               className="opacity-90 mb-[-20px] mr-[-12px]"
             />
             <span className="bg-gradient-to-r  from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-              Onca
+              Diego
             </span>
             <span className="text-white opacity-90">Devs</span>
           </div>

@@ -44,9 +44,9 @@ export function Navbar() {
             height={60}
           />
           <span className="bg-gradient-to-r opacity-90 from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-            Onca
+            Diego
           </span>
-          <span className="text-white opacity-90">Devs</span>
+          <span className="text-white opacity-90">Dev</span>
         </div>
 
         {/* Desktop Nav */}
