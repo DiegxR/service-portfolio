@@ -10,10 +10,9 @@ const links = {
 }
 
 const socials = [
-  { icon: Twitter, href: "#" },
-  { icon: Github, href: "#" },
-  { icon: Linkedin, href: "#" },
-  { icon: Instagram, href: "#" },
+  { icon: Github, href: "https://github.com/DiegxR" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/diego-rojas-266963255/" },
+  { icon: Instagram, href: "https://www.instagram.com/diegorojxs/" },
 ]
 
 export function Footer() {
@@ -25,12 +24,13 @@ export function Footer() {
           <div className="lg:col-span-2">
             <a href="#" className="text-2xl font-bold text-stone-50 inline-block mb-4">
               <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                Onca
+                Diego
               </span>
               <span className="text-stone-400">Devs</span>
             </a>
             <p className="text-stone-400 mb-6 max-w-sm leading-relaxed">
-              Transformamos ideas en soluciones tecnológicas: desde lo simple y eficaz hasta lo complejo y robusto.
+              Acompaño proyectos como freelance o dentro de un equipo, con adaptabilidad,
+              análisis sólido y entregas tecnológicas robustas.
             </p>
             <div className="flex gap-4">
               {socials.map((social, i) => (
@@ -46,66 +46,14 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links */}
-          <div>
-            <h4 className="text-stone-50 font-medium mb-4">Empresa</h4>
-            <ul className="space-y-3">
-              {links.company.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="text-stone-400 hover:text-stone-50 transition-colors text-sm"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-stone-50 font-medium mb-4">Servicios</h4>
-            <ul className="space-y-3">
-              {links.services.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="text-stone-400 hover:text-stone-50 transition-colors text-sm"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-stone-50 font-medium mb-4">Recursos</h4>
-            <ul className="space-y-3">
-              {links.resources.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="text-stone-400 hover:text-stone-50 transition-colors text-sm"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+     
         </div>
 
         <div className="pt-8 border-t border-stone-800/80 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-stone-500 text-sm">
-            © 2026 Onca Devs. Todos los derechos reservados.
+            © 2026 Diego Dev. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-stone-500 hover:text-stone-400 text-sm">
-              Política de privacidad
-            </a>
-            <a href="#" className="text-stone-500 hover:text-stone-400 text-sm">
-              Términos de servicio
-            </a>
-          </div>
+
         </div>
       </div>
     </footer>

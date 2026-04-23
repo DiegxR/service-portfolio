@@ -191,7 +191,7 @@ export function Hero() {
               className="space-y-3"
             >
               <h1 className="text-5xl font-bold tracking-tight text-stone-50 sm:text-6xl lg:text-8xl">
-                Creamos
+                Creando
               </h1>
               <h1 className="text-5xl flex flex-col font-bold tracking-tight text-stone-50 sm:text-6xl lg:text-8xl">
                 <span>Soluciones</span>
@@ -249,7 +249,7 @@ export function Hero() {
             <span className="bg-gradient-to-r  from-emerald-400 to-teal-400 bg-clip-text text-transparent">
               Diego
             </span>
-            <span className="text-white opacity-90">Devs</span>
+            <span className="text-white opacity-90">Dev</span>
           </div>
         </div>
       </div>

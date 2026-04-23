@@ -7,7 +7,6 @@ import {
   Cloud,
   Database,
   Brain,
-  Shield,
 } from "lucide-react"
 
 const services = [
@@ -15,38 +14,33 @@ const services = [
     icon: Globe,
     title: "Desarrollo Web",
     description:
-      "Desde sitios web simples y eficaces hasta aplicaciones web complejas y robustas con Next.js, React y Vue.",
+      "Interfaces y plataformas web con foco en adaptación, análisis de problemas y entregas robustas.",
   },
   {
     icon: Smartphone,
     title: "Apps Móviles",
     description:
-      "Aplicaciones nativas y multiplataforma para iOS y Android, desde soluciones ligeras hasta apps empresariales robustas.",
+      "Aplicaciones nativas y multiplataforma para iOS y Android con mantenimiento y seguimiento continuo.",
   },
   {
     icon: Cloud,
     title: "Arquitectura en la Nube",
     description:
-      "Infraestructura escalable en AWS, GCP y Azure, desde entornos básicos hasta sistemas complejos y seguros.",
+      "Infraestructura escalable y mantenible en AWS, Azure o alternativas más económicas.",
   },
   {
     icon: Database,
     title: "Sistemas Backend",
     description:
-      "APIs y microservicios con Node.js, Python y Go, desde soluciones simples hasta arquitecturas robustas.",
+      "APIs y microservicios con calidad, resiliencia y documentación clara para equipos y clientes.",
   },
   {
     icon: Brain,
     title: "Integración de IA",
     description:
-      "Desde funcionalidades de IA sencillas hasta modelos de machine learning y sistemas inteligentes complejos.",
+      "Desde funcionalidades de IA sencillas hasta modelos de machine learning",
   },
-  {
-    icon: Shield,
-    title: "Seguridad y DevOps",
-    description:
-      "Seguridad y automatización CI/CD, desde pipelines básicos hasta implementaciones empresariales robustas.",
-  },
+  
 ]
 
 export function Services() {
@@ -61,13 +55,14 @@ export function Services() {
           className="text-center mb-16"
         >
           <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
-            Lo que hacemos
+            Enfoque y experiencia
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-50 mt-4">
-            Nuestros servicios
+            Servicios y acompañamiento
           </h2>
           <p className="text-stone-400 mt-4 max-w-2xl mx-auto">
-            Soluciones tecnológicas a medida: desde implementaciones simples y eficaces hasta sistemas complejos y robustos.
+            Trabajo con empresas y clientes directos, brindando seguimiento,
+            adaptación a equipos y soluciones sólidas para cada desafío.
           </p>
         </motion.div>
 

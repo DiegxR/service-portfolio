@@ -12,24 +12,19 @@ const technologies = [
   "PostgreSQL",
   "MongoDB",
   "Docker",
-  "Kubernetes",
   "GraphQL",
-  "Redis",
 ]
 
 const technologies2 = [
   "Tailwind CSS",
-  "Prisma",
   "Vercel",
   "GitHub",
   "Figma",
-  "Stripe",
+  "NestJS",
   "Firebase",
   "Supabase",
-  "OpenAI",
   "Terraform",
-  "Go",
-  "Rust",
+  "Spring Boot",
 ]
 
 export function TechStack() {
@@ -47,10 +42,10 @@ export function TechStack() {
             Tecnologías
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-50 mt-4">
-            Nuestro stack
+            Stack tecnológico
           </h2>
           <p className="text-stone-400 mt-4 max-w-2xl mx-auto">
-            Trabajamos con tecnologías actuales para entregar soluciones simples, eficaces, complejas o robustas.
+            Trabajamos con tecnologías actuales para entregar soluciones eficaces y robustas.
           </p>
         </motion.div>
       </div>

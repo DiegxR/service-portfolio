@@ -16,37 +16,37 @@ const steps = [
     icon: Search,
     title: "Descubrimiento",
     description:
-      "Entendemos tus objetivos, tu audiencia y el alcance del proyecto para definir una solución simple o compleja según necesites.",
+      "Analizo objetivos, problemas y contexto para proponer un plan claro como freelance o miembro del equipo.",
   },
   {
     icon: Lightbulb,
     title: "Estrategia",
     description:
-      "Diseñamos una hoja de ruta clara con hitos y entregables, desde proyectos ágiles hasta iniciativas robustas.",
+      "Defino la ruta con hitos, prioridades y criterios de éxito para implementar soluciones robustas.",
   },
   {
     icon: PenTool,
     title: "Diseño",
     description:
-      "Experiencias de usuario intuitivas y diseños alineados con tu marca, ya sea una interfaz simple o un sistema completo.",
+      "Diseño experiencias alineadas a tu marca y necesidades reales, pensando en mantenimiento y escalabilidad.",
   },
   {
     icon: Code2,
     title: "Desarrollo",
     description:
-      "Construimos tu solución con código limpio y escalable, desde funcionalidades básicas hasta sistemas robustos.",
+      "Desarrollo con código limpio, documentación y entregas robustas que se integran fácilmente.",
   },
   {
     icon: TestTube,
     title: "Pruebas",
     description:
-      "Aseguramos la calidad en todas las plataformas, con pruebas adaptadas a la complejidad de tu proyecto.",
+      "Valido cada entrega con pruebas reales y feedback para asegurar calidad y evitar regresiones.",
   },
   {
     icon: Rocket,
     title: "Lanzamiento",
     description:
-      "Despliegue y soporte continuo para que tu producto funcione bien, ya sea una solución simple o una plataforma compleja.",
+      "Despliegue y seguimiento continuo para que el producto funcione en producción desde el primer día.",
   },
 ]
 
@@ -71,13 +71,14 @@ export function Process() {
           className="text-center mb-20"
         >
           <span className="text-emerald-400 text-sm font-medium tracking-wider uppercase">
-            Cómo trabajamos
+            Cómo trabajo
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-stone-50 mt-4">
-            Nuestro proceso
+            Mi proceso profesional
           </h2>
           <p className="text-stone-400 mt-4 max-w-2xl mx-auto">
-            Una metodología probada para entregar soluciones simples o complejas con resultados claros.
+            Acompaño proyectos como freelance o parte de un equipo, con análisis de problemas,
+            adaptabilidad y entregas robustas.
           </p>
         </motion.div>
 
