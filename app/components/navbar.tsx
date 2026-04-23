@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Servicios", href: "#services" },
   { name: "Tecnologías", href: "#tech" },
   { name: "Proceso", href: "#process" },
+  { name: "Proyectos", href: "#projects" },
   { name: "Contacto", href: "#contact" },
 ];
 
@@ -96,9 +97,11 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
+            <a href="#contact">
             <button className="px-5 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full text-stone-50 font-medium">
               Contactar
             </button>
+            </a>
           </div>
         </motion.div>
       )}

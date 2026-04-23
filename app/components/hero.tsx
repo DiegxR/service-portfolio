@@ -218,8 +218,8 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="max-w-2xl lg:text-4xl leading-8 text-stone-400"
             >
-              Soluciones tecnológicas que van desde lo simple y eficaz
-              hasta lo complejo y robusto, con acompañamiento y soporte continuo.
+              Soluciones tecnológicas que van desde lo simple y eficaz hasta lo
+              complejo y robusto, con acompañamiento y soporte continuo.
             </motion.p>
 
             <motion.div
@@ -228,13 +228,17 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.45 }}
               className="flex flex-col gap-4 sm:flex-row"
             >
-              <button className="group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 px-8 py-4 text-base font-medium text-white transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-lg">
-                Empieza tu proyecto
-                <ArrowRight className="ml-3 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-              </button>
-              <button className="inline-flex items-center justify-center rounded-full border border-stone-600 bg-white/5 px-8 py-4 text-base font-medium text-stone-100 transition hover:bg-stone-800/70">
-                Mira mis proyectos
-              </button>
+              <a href="#contact">
+                <button className="group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 px-8 py-4 text-base font-medium text-white transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+                  Empieza tu proyecto
+                  <ArrowRight className="ml-3 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                </button>
+              </a>
+              <a href="#projects">
+                <button className="inline-flex items-center justify-center rounded-full border border-stone-600 bg-white/5 px-8 py-4 text-base font-medium text-stone-100 transition hover:bg-stone-800/70">
+                  Mira mis proyectos
+                </button>
+              </a>
             </motion.div>
           </div>
 
