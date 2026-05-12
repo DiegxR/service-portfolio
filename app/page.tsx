@@ -21,7 +21,7 @@ function SectionSkeleton() {
 
 export default function Home() {
   return (
-    <main className="bg-stone-950 overflow-x-hidden min-h-screen">
+    <main className="bg-stone-950 transition-all  overflow-x-hidden min-h-screen">
       <Navbar />
       <Suspense fallback={<SectionSkeleton />}>
         <Hero />

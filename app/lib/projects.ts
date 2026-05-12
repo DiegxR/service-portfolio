@@ -2,6 +2,31 @@ import { Project } from "./types";
 
 export const projectsArray: Project[] = [
   {
+    name: "Portafolio Personal",
+    description:"Este fue mi primer portafolio personal donde quise experimentar la integración de modelos 3D con Three Js y la dinamica de una página web interactiva, experimentando nuevas tecnologías y formas de ver las páginas web",
+    details: [
+      {images: [
+        "https://drive.google.com/uc?id=1KaLZa6l505TayQYyTx4F1R1o8xS2mIdj",
+        "https://drive.google.com/uc?id=1WHcel80-7M0Jl8IsYBAvnXe9R0pqJguL",
+        "https://drive.google.com/uc?id=1XzFY8NzvCI-vJTj2Ff2tY4PSVVeFmJyw",
+        "https://drive.google.com/uc?id=11VxkDZ8lxmEAdHwdQINpyBjj9enVgPFH"
+      ],
+    title: "General",
+    description:
+      "En este proyecto me encargué de diseñar y desarrollar mi portafolio personal utilizando Next Js para la estructura de la aplicación, Tailwind CSS para la estilización y Three Js para integrar modelos 3D interactivos. Maqueté diferentes secciones como proyectos, habilidades y contacto, enfocándome en crear una experiencia visual atractiva y fluida. Además, implementé animaciones y efectos visuales para mejorar la interactividad del sitio, logrando un portafolio que refleja mi estilo y habilidades como desarrollador web.",
+    icons: [ { icon: "icon-[devicon--tailwindcss]", name: "Tailwind Css" },
+          { icon: "icon-[devicon--framermotion-wordmark]", name: "Framer Motion" },
+          { icon: "icon-[cib--next-js]", name: "Next Js" },
+          { icon: "icon-[skill-icons--threejs-light]", name: "Three Js" },
+         ],
+    link: "https://portfolio-git-test-objects-diegxrs-projects.vercel.app/",
+    tag: "",
+    }
+    ],
+    tags: ["FrontEnd"],
+
+  },
+  {
     name: "Blooma io",
     description:
       "Gestor de proyectos de diseño y desarrollo tanto para empresas como para freelance donde encontrarás todo lo necesario para tus trabajos, proyectos y ofertas",

@@ -124,7 +124,7 @@ export default function ProjectDetailPage() {
                       variant="outline"
                       className="border-stone-700 text-stone-400 py-2 px-4"
                     >
-                      <span className={`${icon.icon} text-white mr-2`} ></span>
+                      <span className={`${icon.icon} w-5 h-5 text-white mr-2`} ></span>
                       {icon.name}
                     </Badge>
                   ))}
